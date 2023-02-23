@@ -6,23 +6,25 @@
 * @c: third integer
 * Return: largest number
 */
-    int main() {
-    int a, b, c, largest;
-
-    printf("Enter three integers: ");
-    scanf("%d %d %d", &a, &b, &c);
-
-    // find the largest integer among a, b, c
-    largest = a;
-    if (b > largest) {
-        largest = b;
-    }
-    if (c > largest) {
-        largest = c;
-    }
-
-    printf("The largest integer is %d\n", largest);
-
-    return 0;
+int largest_number(int a, int b, int c)
+{
+int largest;
+if (a > b && a > c)
+{
+largest = a;
+}
+else if (a > b && c > a)
+{
+largest = c;
+}
+else if (b > c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
+return (largest);
 }
 
