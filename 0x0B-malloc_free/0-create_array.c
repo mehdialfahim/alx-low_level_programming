@@ -2,7 +2,7 @@
 
 /**
  * *creat array - creates an array of chars,
- * and intialize it with a specific char.
+ * and intialize with a specific char.
  * @size: size of the array
  * @c: char to initialize
  * Return: poniter to the array initialized or NULL
